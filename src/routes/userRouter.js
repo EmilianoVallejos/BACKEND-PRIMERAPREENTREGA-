@@ -53,8 +53,6 @@ router.post('/carts/:cid/product/:pid', (req, res) => {
         if (!product) {
             return res.status(404).json({ error: 'Product not found' });
         }
-
-        
         cartManager.addProductToCart(cartId, productId, quantity);
         res.json({ message: 'Product added to cart successfully' });
     } catch (error) {
@@ -145,6 +143,7 @@ router.post('/carts/:cid/product/:pid', (req, res) => {
         console.error('Error adding product to cart:', error);
         res.status(500).json({ error: 'Internal server error' });
     }
+
 });
 
 router.post ('/imagen', uploader.single('file'), (req, res) =>{
