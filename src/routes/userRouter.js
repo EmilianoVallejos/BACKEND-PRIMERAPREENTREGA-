@@ -90,7 +90,7 @@ router.delete('/products/:pid', (req, res) => {
 });
 
 
-router.get('/carts', (req, res) => {
+router.get('/src/carts', (req, res) => {
     try {
         const allCarts = cartManager.getAllCarts();
         res.json(allCarts);
@@ -100,7 +100,7 @@ router.get('/carts', (req, res) => {
 });
 
 
-router.post('/carts', (req, res) => {
+router.post('/src/carts', (req, res) => {
     try {
         const cart = { products: [] }; // Crear un objeto de carrito vacío
         const cartId = cartManager.addCart(cart); // Agregar el carrito a la gestión de carritos
@@ -112,7 +112,7 @@ router.post('/carts', (req, res) => {
 });
 
 
-router.get('/carts/:cid', (req, res) => {
+router.get('//carts/:cid', (req, res) => {
     try {
         const cartId = parseInt(req.params.cid);
         const products = cartManager.getProductsInCart(cartId); // Obtener productos en el carrito
@@ -123,7 +123,7 @@ router.get('/carts/:cid', (req, res) => {
 });
 
 
-router.post('/carts/:cid/product/:pid', (req, res) => {
+router.post('/src/carts/:cid/product/:pid', (req, res) => {
     try {
         const cartId = parseInt(req.params.cid);
         const productId = parseInt(req.params.pid);
@@ -149,5 +149,4 @@ router.post('/carts/:cid/product/:pid', (req, res) => {
 router.post ('/imagen', uploader.single('file'), (req, res) =>{
     res.send(req.file.path);
 });
-
 export default router;

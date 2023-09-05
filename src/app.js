@@ -1,8 +1,12 @@
-import express from 'express';
-import userRouter from './routes/userRouter.js';
+import {express} from 'express';
+import {userRouter} from './routes/userRouter.js';
+import {ProductManager} from './productManager.js';
+import {CartManager} from './cartManager.js';
+
 const app = express();
-const ProductManager = require('./productManager');
-const CartManager = require('./cartManager');
+
+//const ProductManager = require('./productManager');
+//const CartManager = require('./cartManager');
 
 const productManager = new ProductManager('./src/products.json');
 const cartManager = new CartManager('./src/cart.json');

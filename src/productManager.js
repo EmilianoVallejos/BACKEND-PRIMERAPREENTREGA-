@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs'; 
 
 class ProductManager {
     constructor(path) {
@@ -82,4 +82,5 @@ const productManager = new ProductManager('./src/products.json');
 //Obtener los productos
 console.log(productManager.getProducts());
 
-module.exports = ProductManager;
+export default ProductManager;
+//module.exports = ProductManager;
