@@ -1,7 +1,10 @@
 import { Router } from "express";
+import ProductManager from "../productManager.js";
 import { uploader } from "../middlewares/multer.js";
 
+
 const router = Router();
+const ProductManager = new ProductManager ('/products.json')
 
 router.get('/',(req,res)=> res.send ({}));
 
@@ -104,6 +107,7 @@ router.post('/src/carts', (req, res) => {
     try {
         const cart = { products: [] }; // Crear un objeto de carrito vacío
         const cartId = cartManager.addCart(cart); // Agregar el carrito a la gestión de carritos
+        req.context.socketServer.emit();
         res.status(201).json({ message: 'Cart created successfully', cartId });
     } catch (error) {
         console.error('Error creating cart:', error);

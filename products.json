@@ -1,11 +1,13 @@
-[
     {
         "title": "Pedigree 15kg",
         "description": "Alimento balanceado - perro adulto",
         "price": 10000,
         "code": "abc1",
         "stock": 11,
-        "id": 1
+        "id": 1,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Collar antipulgas Seresto",
@@ -13,7 +15,10 @@
         "price": 1700,
         "code": "abc2",
         "stock": 8,
-        "id": 2
+        "id": 2,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Caniles para perro",
@@ -21,7 +26,10 @@
         "price": 8400,
         "code": "abc3",
         "stock": 5,
-        "id": 3
+        "id": 3,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Pro Plan 18kg",
@@ -29,7 +37,10 @@
         "price": 19500,
         "code": "abc4",
         "stock": 11,
-        "id": 4
+        "id": 4,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Whiskas 5kg",
@@ -37,7 +48,10 @@
         "price": 2000,
         "code": "abc5",
         "stock": 15,
-        "id": 5
+        "id": 5,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Juguete para gato",
@@ -45,7 +59,10 @@
         "price": 7000,
         "code": "abc6",
         "stock": 18,
-        "id": 6
+        "id": 6,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Collar",
@@ -53,7 +70,10 @@
         "price": 4900,
         "code": "abc7",
         "stock": 13,
-        "id": 7
+        "id": 7,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Royal Canin 12kg",
@@ -61,7 +81,10 @@
         "price": 21000,
         "code": "abc8",
         "stock": 9,
-        "id": 8
+        "id": 8,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Piedras sanitarias",
@@ -69,7 +92,10 @@
         "price": 6000,
         "code": "abc9",
         "stock": 7,
-        "id": 9
+        "id": 9,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Shampoo antipulgas",
@@ -77,7 +103,10 @@
         "price": 2600,
         "code": "abc10",
         "stock": 6,
-        "id": 10
+        "id": 10,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Comprimido antiparasitario",
@@ -85,7 +114,10 @@
         "price": 8500,
         "code": "abc11",
         "stock": 12,
-        "id": 11
+        "id": 11,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     },
     {
         "title": "Cucha para perro",
@@ -93,7 +125,9 @@
         "price": 265000,
         "code": "R0003",
         "stock": 2,
-        "id": 12
+        "id": 12,
+        "status": false,
+        "category": "categoria",
+        "thumbnails":
     }
     
-]

@@ -83,4 +83,3 @@ const productManager = new ProductManager('./src/products.json');
 console.log(productManager.getProducts());
 
 export default ProductManager;
-//module.exports = ProductManager;
