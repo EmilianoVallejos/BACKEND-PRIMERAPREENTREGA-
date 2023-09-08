@@ -27,5 +27,14 @@ app.use(express.json());
 app.use('/', viewRouter);
 app.use('/api/products/',userRouter);
 
+const mensajes =[];
 
-// Iniciar el servidor
+socketServer.on ('connection', (socket)=>{
+    socketsAbiertos[socket.id]=socket;
+
+
+socket.on('mensaje', (data)=>{
+    mensajes.push ({ socketid: socket.id, mensaje: data.mensaje});
+    socketServer.emit('nuevo_contenido', mensaje)
+});
+});
